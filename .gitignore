@@ -1,0 +1,39 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+secrets*
+
+# Node.js / Next.js
+node_modules/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+npm-debug.log*
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Databases and local files
+*.sql
+*.sqlite3
+*.dump
+postgres-data/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*.swp

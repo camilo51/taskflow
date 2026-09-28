@@ -1,0 +1,9 @@
+node_modules/
+.next/
+coverage/
+dist/
+build/
+.venv/
+__pycache__/
+*.lock
+apps/api/alembic/versions/
