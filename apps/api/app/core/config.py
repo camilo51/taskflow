@@ -8,9 +8,7 @@ class Settings(BaseSettings):
 
     app_name: str = "TaskFlow API"
     environment: str = "development"
-    database_url: str = (
-        "postgresql+psycopg://taskflow:taskflow@postgres:5432/taskflow"
-    )
+    database_url: str = "postgresql+psycopg://taskflow:taskflow@postgres:5432/taskflow"
 
     model_config = SettingsConfigDict(
         env_file=".env",
