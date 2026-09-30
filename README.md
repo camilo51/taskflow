@@ -79,6 +79,19 @@ ruff format --check .
 pytest
 ```
 
+## Database migrations
+
+Migrations are versioned with Alembic and are never run implicitly when the API starts. With Docker running, use:
+
+```bash
+npm run db:current
+npm run db:upgrade
+npm run db:downgrade
+npm run db:revision -- -m "describe schema change"
+```
+
+`db:downgrade` reverts one migration. Use it deliberately: it can remove local database structures and their data.
+
 ## Git workflow
 
 Do not develop directly on `main`. Create a typed branch such as `feat/projects`, make Conventional Commits (`type(scope): description`), push it, open a pull request, let CI pass, review, then merge. The commit-msg hook validates the format after `npm install` has initialized Husky.

@@ -13,6 +13,10 @@
     "lint:web": "npm run lint --workspace=web",
     "typecheck:web": "npm run typecheck --workspace=web",
     "test:web": "npm run test --workspace=web",
+    "db:current": "docker compose exec api alembic current",
+    "db:upgrade": "docker compose exec api alembic upgrade head",
+    "db:downgrade": "docker compose exec api alembic downgrade -1",
+    "db:revision": "docker compose exec api alembic revision --autogenerate",
     "format": "prettier --check .",
     "format:write": "prettier --write .",
     "prepare": "husky"
