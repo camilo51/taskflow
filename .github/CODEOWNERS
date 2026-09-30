@@ -1,3 +1,4 @@
-# Replace @camilo51 with the GitHub account that owns this repository
-# before enabling "Require review from Code Owners" in the main ruleset.
+# Default code owner for this repository.
+# Enable "Require review from Code Owners" in the main ruleset when an
+# independent reviewer joins the project.
 * @camilo51
